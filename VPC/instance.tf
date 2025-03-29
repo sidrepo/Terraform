@@ -22,5 +22,5 @@ resource "aws_instance" "web-server" {
 }
 resource "aws_key_pair" "jenkins-key-pair"{
     key_name = "jenkins-key-pair"
-    public_key = file("/opt/terraform/Terraform/VPC/jenkins-key-pair")
+    public_key = file("/opt/terraform/Terraform/VPC/jenkins-key-pair.pub")
 }
