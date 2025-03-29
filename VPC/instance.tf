@@ -10,8 +10,7 @@ resource "aws_instance" "web-server" {
     }
     provisioner "remote-exec" {
         inline = [
-             "chmod +x /tmp/nginx.sh",
-             "sudo /tmp/nginx.sh"
+             "sudo yum install nginx"
         ]
     }
     connection {
